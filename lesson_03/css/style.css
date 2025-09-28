@@ -3,22 +3,33 @@
 
 /* Основні стилі */
 h1 {
-    font-size: 36px;
+   
     color: #0d6706;
-    text-align: center;
+    
   
 }
 h2 {
-    font-size: 28px;
+   
     color: #370483;
   
 }
 p {
-    font-size: 18px;
+    
     color: #333;
    
 }
 a {
     color: #1a73e8;
-    text-decoration: underline;
+    
+}
+.p1 {
+   
+    color: #444;
+}
+.p2 {
+   
+    color: #26b882;
+}
+.cont1{
+    color: #2cc1d5;
 }
