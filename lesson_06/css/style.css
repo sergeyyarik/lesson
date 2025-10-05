@@ -67,9 +67,12 @@ body {
 .main__title {
     width: 520px;
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 96px;
     margin: 20px 0px 16px;
+}
+.main__title-color{
+      font-weight: 700;
 }
 .main__separator {
     width: 308px;
@@ -170,3 +173,4 @@ body {
     font-size: 14px;
     color: #090909;
 }
+
