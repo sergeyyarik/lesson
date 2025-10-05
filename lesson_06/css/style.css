@@ -67,7 +67,7 @@ body {
 .main__title {
     width: 520px;
     font-family: "Montserrat", sans-serif;
-    font-weight: 800;
+    font-weight: 900;
     font-size: 96px;
     margin: 20px 0px 16px;
 }
@@ -173,4 +173,5 @@ body {
     font-size: 14px;
     color: #090909;
 }
+
 
