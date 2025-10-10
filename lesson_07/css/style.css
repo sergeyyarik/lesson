@@ -269,7 +269,7 @@ body {
 
 [class^="games__item-"]:not(.games__item-0, .games__item-10) {
     visibility: hidden;
-    transition: all 1.5s ease;
+    transition: all 0.8s ease;
 }
 .games__item-0:hover {
     visibility: visible;
@@ -343,3 +343,4 @@ body {
     cursor: pointer;
     background-color: #1a970a;
 }
+
