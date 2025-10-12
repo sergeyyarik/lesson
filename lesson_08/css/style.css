@@ -93,7 +93,7 @@ body {
     width: 49%;
 }
 .main__shanti-content div:nth-child(4) {
-    padding-top: 50px;
+    /* padding-top: 50px; */
     padding-left: 30px;
 }
 .main__shanti-block h2 {
@@ -139,6 +139,7 @@ body {
     color: #343434;
     transition: all 0.8s;
     cursor: pointer;
+   
 }
 .main__shanti-block-btn:hover {
     color: #878484;
@@ -260,6 +261,10 @@ body {
 .footer__text {
     font-size: 15px;
     font-weight: 400;
-    color:#343434;
+    color: #343434;
 }
-
+h6{
+    font-size: 20px;
+    font-weight: 600;
+    color: #6b5136;
+}
