@@ -1,0 +1,263 @@
+/* Скидання стилів */
+@import url("rezet.css");
+
+/* Основні стилі */
+body {
+    font-family: "Montserrat ", serif;
+    background-color: #cecece;
+}
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 50px;
+    color: #343434;
+    background-color: #fafafb;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header__shanti {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 103px;
+}
+.header__shanti-logo {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 0;
+}
+.header__logo {
+    width: 144px;
+    height: 44px;
+    background-image: url("../img/logo_shanti.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__menu {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding: 25px 0;
+    text-align: center;
+}
+.header__link {
+    font-size: 16px;
+    padding-left: 20px;
+    font-weight: 400;
+    transition: all 0.8s;
+}
+.header__link:hover {
+    color: #929291;
+    text-decoration: underline;
+}
+.header__shanti-btn {
+    width: 166px;
+    height: 46px;
+    border-radius: 15px;
+    background-color: #ba936f;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+.header__shanti-btn:hover {
+    background-color: #987655;
+}
+.header__box-btn {
+    display: inline-block;
+    vertical-align: top;
+    width: 23%;
+    padding: 10px 0;
+    text-align: right;
+}
+.main__shanti {
+    width: 100%;
+}
+.main__shanti-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+.main__shanti-content div:first-child {
+    padding: 70px 30px 0 0;
+}
+.main__shanti-block {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+}
+.main__shanti-content div:nth-child(4) {
+    padding-top: 50px;
+    padding-left: 30px;
+}
+.main__shanti-block h2 {
+    font-family: "Lora";
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ba936f;
+    margin-bottom: 50px;
+    line-height: 50px;
+    width: 100%;
+}
+.main__shanti-block-title {
+    font-family: "Lora";
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ba936f;
+    margin-bottom: 70px;
+    line-height: 50px;
+    width: 100%;
+}
+.main__shanti-block p:nth-child(3) {
+    max-width: 447px;
+    margin-bottom: 40px;
+}
+.text__color {
+    font-weight: 800;
+    color: #ba936f;
+}
+.main__shanti-block-text {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-right: 35px;
+    margin-bottom: 60px;
+    color: #343434;
+}
+.main__shanti-block-btn {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #343434;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+.main__shanti-block-btn:hover {
+    color: #878484;
+}
+.main__shanti-block-btn::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/group_icon_shanti.svg");
+    margin-bottom: -43px;
+    margin-right: -35px;
+}
+
+.main__shanti-block-btn::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/right-arrow_shanti.svg");
+    margin-bottom: -8px;
+    margin-left: 6px;
+}
+.main__shanti-block-button {
+    width: 200px;
+    height: 46px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #ba936f;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+.main__shanti-block-button:hover {
+    background-color: #987655;
+}
+.main__shanti-block-picture {
+    width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.main__shanti-content div:nth-child(3) {
+    margin-right: 20px;
+    margin-bottom: 138px;
+}
+.main__shanti-content div:nth-child(2) {
+    margin-bottom: 70px;
+}
+.main__shanti-content div:nth-child(3) {
+    max-height: 605px;
+}
+.main__shanti-block-img {
+    width: 100%;
+    max-height: 647px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+/* shanti our */
+
+.main__shanti-our {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.main__shanti-our-grup {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 50px;
+}
+.main__shanti-our-grup:nth-child(1) {
+    max-width: 840px;
+}
+.main__shanti-our-grup h2 {
+    margin-bottom: 32px;
+}
+.main__shanti-our-grup p {
+    margin-bottom: 64px;
+    font-size: 17px;
+}
+.main__shanti-our-imggrup {
+    width: 30%;
+    height: 440px;
+    display: inline-block;
+    margin-left: 3%;
+    vertical-align: top;
+}
+.main__shanti-our-imggrup:first-child {
+    margin-left: 0;
+    padding-right: 0;
+}
+.our-pict:nth-child(2) {
+    height: 412px;
+}
+.our__img {
+    height: 437px;
+    overflow: hidden;
+}
+
+.our-pict {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 33px;
+    margin-bottom: 14px;
+}
+.our-text {
+    font-size: 22px;
+    font-weight: 400;
+    color: #ba936f;
+}
+/* shanti footer */
+
+.foter__shanti {
+    width: 100%;
+    background-color: #fdefe6;
+    text-align: center;
+    padding: 25px 0;
+}
+.footer__text {
+    font-size: 15px;
+    font-weight: 400;
+}

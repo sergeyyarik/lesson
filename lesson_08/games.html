@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat%20Underline:wght@400;600;800;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Гра</title>
+    </head>
+    <style>
+        .games__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 15px;
+    background-color: #252b42;
+    color: white;
+}
+.games__title {
+    font-size: 46px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.games__box {
+    max-width: 1000px;
+    max-height: 1000px;
+    margin: 0 auto;
+}
+
+.games__item-0 {
+    visibility: visible;
+    width: 200px;
+    background-color: #0a508e;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 590px;
+    display: inline-block;
+}
+
+.games__item-1 {
+    background-color: #31a0fe;
+    width: 200px;
+    height: 20px;
+    margin-left: -20px;
+    margin-bottom: -90px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.games__item-2 {
+    background-color: #6097c7;
+    width: 10px;
+    height: 150px;
+    margin-left: -14px;
+    margin-bottom: -220px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.games__item-3 {
+    background-color: #1161a7;
+    width: 250px;
+    height: 15px;
+    margin-left: -15px;
+    margin-bottom: -220px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.games__item-4 {
+    background-color: #587288;
+    width: 25px;
+    height: 100px;
+    margin-left: -23px;
+    margin-bottom: -305px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.games__item-5 {
+    background-color: #1161a7;
+    width: 150px;
+    height: 8px;
+    margin-left: -29px;
+    margin-bottom: -305px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.games__item-6 {
+    background-color: #3c8acb;
+    width: 12px;
+    height: 300px;
+    margin-left: -15px;
+    margin-bottom: -598px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.games__item-7 {
+    background-color: #1161a7;
+    width: 350px;
+    height: 14px;
+    margin-left: -354px;
+    margin-bottom: -598px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.games__item-8 {
+    background-color: #3c8acb;
+    width: 18px;
+    height: 170px;
+    margin-left: -355px;
+    margin-bottom: -755px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.games__item-9 {
+    background-color: #1161a7;
+    width: 150px;
+    height: 20px;
+    margin-left: -154px;
+    margin-bottom: -755px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.games__item-10 {
+    display: none;
+    width: 300px;
+    height: 100px;
+    background-color: #031c41;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #031c41;
+}
+.games__box > *:hover + * {
+    visibility: visible;
+    cursor: pointer;
+}
+
+[class^="games__item-"]:not(.games__item-0, .games__item-10) {
+    visibility: hidden;
+    transition: all 1.5s ease;
+}
+.games__item-0:hover {
+    visibility: visible;
+    background-color: #1a970a;
+}
+
+.games__item-0:hover + .games__item-1,
+.games__item-1:hover {
+    visibility: visible;
+    cursor: pointer;
+    background-color: #1a970a;
+}
+.games__item-1:hover + .games__item-2,
+.games__item-2:hover {
+    visibility: visible;
+    cursor: pointer;
+    background-color: #1a970a;
+}
+.games__item-2:hover + .games__item-3,
+.games__item-3:hover {
+    visibility: visible;
+    cursor: pointer;
+    background-color: #1a970a;
+}
+.games__item-3:hover + .games__item-4,
+.games__item-4:hover {
+    visibility: visible;
+    cursor: pointer;
+    background-color: #1a970a;
+}
+.games__item-4:hover + .games__item-5,
+.games__item-5:hover {
+    visibility: visible;
+    cursor: pointer;
+    background-color: #1a970a;
+}
+.games__item-5:hover + .games__item-6,
+.games__item-6:hover {
+    visibility: visible;
+    cursor: pointer;
+    background-color: #1a970a;
+}
+.games__item-6:hover + .games__item-7,
+.games__item-7:hover {
+    visibility: visible;
+    cursor: pointer;
+    background-color: #1a970a;
+}
+.games__item-7:hover + .games__item-8,
+.games__item-8:hover {
+    visibility: visible;
+    cursor: pointer;
+    background-color: #1a970a;
+}
+.games__item-8:hover + .games__item-9,
+.games__item-9:hover {
+    visibility: visible;
+    cursor: pointer;
+    background-color: #1a970a;
+}
+.games__item-9:hover + .games__item-10,
+.games__item-10:hover {
+    visibility: visible;
+    cursor: pointer;
+    background-color: #1a970a;
+    color: #1a970a;
+    display: block;
+}
+.games__item-10:hover {
+    background-color: #1a970a;
+    color: white;
+    cursor: pointer;
+    background-color: #1a970a;
+}
+
+    </style>
+    <body>
+        <div class="games__container">
+            <header class="header__games header__menu">
+                <a href="index.html" class="header__link">Головна</a>
+                <a href="contacts.html" class="header__link">Контакти</a>
+            </header>
+            <h1 class="games__title ">Гра на (css)</h1>
+            <main class="main__games">
+                <div class="games__box">
+                    <div class="games__item-0">старт</div>
+                    <div class="games__item-1"></div>
+                    <div class="games__item-2"></div>
+                    <div class="games__item-3"></div>
+                    <div class="games__item-4"></div>
+                    <div class="games__item-5"></div>
+                    <div class="games__item-6"></div>
+                    <div class="games__item-7"></div>
+                    <div class="games__item-8"></div>
+                    <div class="games__item-9"></div>
+                    <div class="games__item-10">перемога</div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
