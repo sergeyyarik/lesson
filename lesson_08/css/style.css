@@ -93,7 +93,6 @@ body {
     width: 49%;
 }
 .main__shanti-content div:nth-child(4) {
-    /* padding-top: 50px; */
     padding-left: 30px;
 }
 .main__shanti-block h2 {
@@ -268,3 +267,4 @@ h6{
     font-weight: 600;
     color: #6b5136;
 }
+
