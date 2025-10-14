@@ -14,14 +14,13 @@ body {
 }
 .header__menu {
     max-width: 300px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
 }
 .header__link {
     font-size: 20px;
     padding-left: 20px;
     font-weight: 600;
     transition: all 0.8s;
-    margin-bottom: 40px;
 }
 .header__link:hover {
     color: #929291;
@@ -74,9 +73,11 @@ body {
     width: 70%;
 }
 .cart__price {
+    font-family: "Open Sans" sans-serif;
     font-weight: 600;
     font-size: 40px;
     line-height: 44px;
+    color: #252B42;
 }
 .cart__text {
     max-width: 230px;
@@ -91,18 +92,21 @@ body {
     margin-bottom: 20px;
 }
 .cart__li::before {
-    content: "✓";
+    background-image: url("../img/icon_cart.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: " ";
     display: inline-block;
-    color: #fbfbfc;
     width: 20px;
-    height: 20px;
-    padding: 0 0 3px 3px;
+    height:20px;
+    padding: 13px;
     border-radius: 50%;
-    vertical-align: middle;
+    vertical-align:middle;
     background-color: #24a704;
-    margin-right: 10px;
-    font-weight: 600;
-    letter-spacing: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
 }
 .cart__li:nth-child(4)::before {
     background-color: #929291;
@@ -114,12 +118,17 @@ body {
     margin-bottom: 0;
 }
 .cart__li {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 600;
     margin-bottom: 15px;
+    color: #252B42;
+   line-height: 24px;
+   position: relative;
+   padding-left: 40px;
+
 }
 .cart__but {
-    display: inline-block;
+    display:inline-block;
     width: 100%;
     padding: 15px 0;
     background-color: #31a0fe;
@@ -156,7 +165,6 @@ body {
     max-height: 1000px;
     margin: 0 auto;
 }
-
 .games__item-0 {
     visibility: visible;
     width: 200px;
@@ -252,7 +260,7 @@ body {
     border-radius: 5px;
 }
 .games__item-10 {
-    display:none;
+    display: none;
     width: 300px;
     height: 100px;
     background-color: #031c41;
@@ -267,12 +275,36 @@ body {
     visibility: visible;
     cursor: pointer;
 }
-
-[class^="games__item-"]:not(.games__item-0, .games__item-10) {
-    visibility: hidden;
-    transition: all 0.2s;
+.games__item{
+     visibility: hidden;
+    transition: all 0.5s ease;
+    cursor: pointer;
 }
-.games__item-0:hover {
+.games__item:hover {
+    visibility: visible;
+    background-color: #1a970a;
+}
+.games__item-9:hover + .games__item-10,
+.games__item-10:hover {
+    visibility: visible;
+    display: block;
+    cursor: pointer;
+    background-color: #1a970a;
+    color: #1a970a;
+} 
+.games__item-10:hover {
+    background-color: #1a970a;
+    color: white;
+    cursor: pointer;
+    background-color: #1a970a;
+} 
+
+/* [class^="games__item-"]:not(.games__item-0, .games__item-10) {
+    visibility: hidden;
+    transition: all 1.5s ease;
+} */
+
+/* .games__item-0:hover {
     visibility: visible;
     background-color: #1a970a;
 }
@@ -330,21 +362,4 @@ body {
     visibility: visible;
     cursor: pointer;
     background-color: #1a970a;
-}
-.games__item-9:hover + .games__item-10,
-.games__item-10:hover {
-    visibility: visible;
-    cursor: pointer;
-    background-color: #1a970a;
-    color: #1a970a;
-     display:block;
-}
-.games__item-10:hover {
-    background-color: #1a970a;
-    color: white;
-    cursor: pointer;
-    background-color: #1a970a;
-}
-
-
-
+}*/
