@@ -1,0 +1,298 @@
+/* Скидання стилів */
+@import url("rezet.css");
+
+/* Основні стилі */
+body {
+    font-family: "Montserrat ", serif;
+    background-color: #cecece;
+}
+[class*="__container"] {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.hed-content {
+    background-color: rgb(55, 52, 234, 0.7);
+    padding: 10px 0;
+    text-align: center;
+}
+.hed-content__title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #2909cb;
+    text-transform: uppercase;
+    margin: 0;
+}
+.main-content {
+    background: linear-gradient(178deg, rgba(42, 61, 155, 1) 0%, rgba(234, 242, 90, 1) 90%);
+    padding-top: 50px;
+}
+
+.main-content__car-body {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    background-color: rgb(37, 3, 122);
+    border-radius: 50px 190px 0 10px;
+    margin-bottom: 50px;
+}
+
+.main-content__car-before {
+    position: absolute;
+    bottom: 0;
+    right: -70px;
+    width: 100px;
+    height: 150px;
+    background-color: rgb(37, 3, 122);
+    border-radius: 0 100px 10px 0;
+}
+.main-content__car-before::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    top: 90px;
+    right: -10px;
+    background-color: rgb(225, 228, 241);
+    border-radius: 0px 10px 10px 0px;
+}
+.main-content__car-slope {
+    position: absolute;
+    width: 589px;
+    height: 100px;
+    top: 50px;
+    left: 6px;
+    background: linear-gradient(
+        177deg,
+        rgba(187, 196, 240, 1) 3%,
+        rgba(213, 235, 228, 1) 50%,
+        rgba(237, 237, 230, 1) 100%
+    );
+    border-radius: 0 100px 0 0px;
+    border: 1px solid rgb(37, 3, 122, 0.5);
+}
+.main-content__car-slope::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 99px;
+    top: 0px;
+    left: 150px;
+    background-color: rgb(178, 189, 241);
+}
+.main-content__car-slope::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 99px;
+    top: 0px;
+    right: 300px;
+    background-color: rgb(178, 189, 241);
+}
+.main-content__car-door {
+    position: absolute;
+    width: 100px;
+    height: 239px;
+    bottom: 10px;
+    right: 110px;
+    /* border:3px solid rgb(37, 3, 122); */
+    background: linear-gradient(13deg, rgb(12, 30, 120) 47%, rgba(213, 235, 228, 1) 85%, rgba(237, 237, 230, 1) 100%);
+    box-shadow:
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(88, 115, 221),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    border-radius: 10px 0px 0 10px;
+}
+.main-content__car-group {
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    top: 160px;
+    right: 190px;
+    background-color: rgb(229, 227, 77, 0.7);
+    border-radius: 10px 10px 10px 10px;
+    z-index: 100;
+}
+.main-content__car-group::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    top: -10px;
+    right: -92px;
+    background-color: rgb(229, 227, 77, 0.7);
+    border-radius: 10px 10px 10px 10px;
+}
+.main-content__car-group::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    top: 110px;
+    left: 82px;
+    background-color: rgb(229, 227, 77, 0.7);
+    border-radius: 10px 10px 10px 10px;
+}
+.main-content__car-wheel1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: -50px;
+    left: 100px;
+    background-color: rgb(255, 255, 3);
+    border-radius: 50%;
+    border: 10px dashed rgb(7, 7, 7);
+    transition:
+        linear rotate 1.5s,
+        background-color 4s;
+}
+.main-content__car-wheel1:hover,
+.main-content__car-wheel2:hover {
+    rotate: 360deg;
+    background-color: rgb(188, 188, 8);
+}
+
+.main-content__car-wheel2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: -50px;
+    right: 0;
+    background-color: rgb(255, 255, 3);
+    border-radius: 50%;
+    border: 10px dashed rgb(7, 7, 7);
+    transition:
+        linear rotate 1.5s,
+        background-color 4s;
+}
+.main-content__car-stop {
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    bottom: 30px;
+    left: -10px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px 0 0 10px;
+}
+.main-content__car-text {
+    position: absolute;
+    top: 12px;
+    left: 200px;
+    font-size: 24px;
+    color: rgba(248, 248, 25, 0.3);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/* doroga */
+.main-content__road {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(50, 50, 50);
+}
+/* rotate cub */
+.content-cube {
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 100px;
+   
+}
+
+.content-cube__row {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(164, 137, 234);
+    margin: 0 15px;
+}
+.item-1:hover {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(37, 3, 122);
+    transform: translate(20px, -20px);
+}
+.item-1 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(37, 3, 122);
+    transition:
+        background-color 0.5s,
+        transform 0.5s;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+.item-2:hover {
+    transform: rotate(-45deg);
+}
+.item-2 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(37, 3, 122);
+    transition:
+        background-color 0.5s,
+        transform 0.5s;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+.item-3:hover {
+    transform: rotate3d(0, 40, 0, 60deg);
+}
+.item-3 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(37, 3, 122);
+    transition:
+        background-color 0.5s,
+        transform 0.5s;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+.item-4:hover {
+    transform: skew(40deg, 10deg);
+}
+.item-4 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(37, 3, 122);
+    transition:
+        background-color 0.5s,
+        transform 0.5s;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+.item-5:hover {
+    transform: rotate3d(40, 20, 20, 45deg);
+}
+.item-5 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(37, 3, 122);
+    transition:
+        background-color 0.5s,
+        transform 0.5s;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+.item-6:hover {
+    transform: translate3d(60px, 20px, 50px) rotate3d(-50, -20, 20, -40deg);
+}
+.item-6 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(37, 3, 122);
+    transition:
+        background-color 0.5s,
+        transform 0.5s;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+}
