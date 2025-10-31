@@ -6,8 +6,8 @@ body {
     font-family: "Montserrat ", serif;
     background-color: #cecece;
 }
-.container{
+/* [class*="container"]{
     width: 1422px;
     margin: 0 auto;
     padding: 0 15px;
-}
+} */
