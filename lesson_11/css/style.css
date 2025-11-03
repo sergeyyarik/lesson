@@ -210,10 +210,11 @@ body {
     margin: 0 15px;
 }
 .item-1:hover {
-    width: 150px;
-    height: 150px;
     background-color: rgb(37, 3, 122);
     transform: translate(20px, -20px);
+}
+.content-cube__row:hover .item-1{
+     transform: translate(20px, -20px);
 }
 .item-1 {
     width: 150px;
@@ -229,6 +230,9 @@ body {
 .item-2:hover {
     transform: rotate(-45deg);
 }
+.content-cube__row:hover .item-2{  
+    transform:rotate( -45deg);
+}
 .item-2 {
     width: 150px;
     height: 150px;
@@ -242,6 +246,9 @@ body {
 }
 .item-3:hover {
     transform: rotate3d(0, 40, 0, 60deg);
+}
+.content-cube__row:hover .item-3{  
+    transform:rotate3d(0, 40, 0, 60deg);
 }
 .item-3 {
     width: 150px;
@@ -257,6 +264,9 @@ body {
 .item-4:hover {
     transform: skew(40deg, 10deg);
 }
+.content-cube__row:hover .item-4{  
+  transform: skew(40deg, 10deg);
+}
 .item-4 {
     width: 150px;
     height: 150px;
@@ -271,6 +281,9 @@ body {
 .item-5:hover {
     transform: rotate3d(40, 20, 20, 45deg);
 }
+.content-cube__row:hover .item-5{  
+    transform:rotate3d(40, 20, 20, 45deg);
+}
 .item-5 {
     width: 150px;
     height: 150px;
@@ -283,6 +296,9 @@ body {
     padding: 20px;
 }
 .item-6:hover {
+    transform: translate3d(60px, 20px, 50px) rotate3d(-50, -20, 20, -40deg);
+}
+.content-cube__row:hover .item-6{  
     transform: translate3d(60px, 20px, 50px) rotate3d(-50, -20, 20, -40deg);
 }
 .item-6 {
