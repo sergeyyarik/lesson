@@ -83,7 +83,7 @@ body {
     flex-grow: 1;
     flex-shrink: 1;
 }
-.content-choose h3 {
+.choose-items__block h3 {
     margin-bottom: 24px;
 }
 .items-img {
