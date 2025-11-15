@@ -1,0 +1,204 @@
+/* Скидання стилів */
+@import url("rezet.css");
+
+/* Основні стилі */
+body {
+    font-family: "Lato ", sans-serif;
+}
+[class*="__container"] {
+    max-width: 1410px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.wrapper {
+    max-width: 1920px;
+    background-color: #ffffff;
+}
+.header {
+    width: 100%;
+    padding: 60px 0;
+    margin-bottom: 80px;
+}
+.header__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.content-items__logo {
+    width: 125px;
+    height: 20px;
+    padding: 8px 0;
+}
+.content-items__form {
+    position: relative;
+}
+.content-items__input {
+    border-bottom: 1px solid #D4D4D4;
+    padding: 12px 30px;
+    color: #7E7F7C;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+}
+.content-items__form::before{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/search.svg");
+    bottom: 12px;
+   left: 5px;
+}
+.content-items__nav ul{
+position: relative;
+    max-width: 360px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 12px 0;
+}
+.content-items__li {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    border-bottom: 2px solid unset;
+    transition: all 0.6s linear;
+}
+.content-items__item li:nth-of-type(2)::after{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 9px;
+    left: 135px;
+  background-image: url("../img/chevron-down.svg");
+
+}
+.content-items__li:hover{
+    color: rgb(136, 134, 134);
+    border-bottom: 2px solid rgb(136, 134, 134);
+}
+.content-items__ul {
+    width: 260px;
+    display: flex;
+    justify-content:end;
+    gap: 50px;
+    position: relative;
+    padding: 12px 0;
+}
+.content-items__ul li:nth-child(1)::before{
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/heart.svg");
+    top: 10px;
+    left: 98px;
+}
+.content-items__ul li:nth-child(2)::before{
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/shopping-bag.svg");
+    top: 10px;
+    left: 192px;
+}
+.main {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.content-list__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+}
+.content-list__subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #7E7F7C;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+.main__hero {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.hero-list__items {
+    max-width: 712px;
+    text-align: left;
+}
+.hero-list__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+}
+.hero-list__text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #7E7F7C;
+    margin-bottom: 70px;
+}
+.hero-list__text a{
+    color: black;
+    border-bottom: 1px solid black;
+}
+.hero-list__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.hero-list__input {
+    width: 336px;
+    height: 44px;
+        font-size: 16px;
+    font-weight: 500;
+    color: #7E7F7C;
+     outline: none;
+    margin-bottom: 44px;
+    border-bottom: 1px solid #7E7F7C;
+
+}
+.hero-list__input:nth-of-type(3){
+    width: 100%;
+}
+.hero-list__btn {
+    width: 336px;
+    height: 44px;
+    background-color: black; 
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.8s;
+
+}
+.hero-list__btn:hover{
+      background-color: #7E7F7C;
+}
+.hero-list__img {
+    background-image: url("../img/Banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 580px;
+}
+.footer{
+    width: 100%;
+  padding: 30px 0;
+    background-color: #d8d8d7;
+    text-align: center;
+    font-size: 20px ;
+    font-weight: 600;
+    color: #7E7F7C;
+}
