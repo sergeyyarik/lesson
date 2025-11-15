@@ -125,7 +125,7 @@ position: relative;
     margin-bottom: 80px;
     text-transform: uppercase;
 }
-.main__hero {
+.hero {
     display: flex;
     justify-content: space-between;
     gap: 50px;
@@ -202,3 +202,4 @@ position: relative;
     font-weight: 600;
     color: #7E7F7C;
 }
+
