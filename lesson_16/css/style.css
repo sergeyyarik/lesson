@@ -100,12 +100,12 @@ body {
     line-height: 1.25;
     transition: all 0.6s;
 }
-.nav__shop {
+.content-hed__shop {
     display: flex;
     gap: 44px;
     padding: 12px 0;
 }
-.burger__btn {
+.content-hed__burger {
     display: none;
     width: 30px;
     height: 18px;
@@ -191,7 +191,7 @@ p {
         background-color: inherit;
     }
     .logo,
-    .burger__btn,
+    .content-hed__burger,
     .nav__shop,
     .content-hed__search,
     .content-hed__nav {
@@ -202,7 +202,7 @@ p {
     .header__content {
         justify-content: space-between;
     }
-    .burger__btn {
+    .content-hed__burger{
         visibility: visible;
         position: relative;
         display: block;
@@ -210,9 +210,9 @@ p {
         height: 18px;
         flex-shrink: 0;
     }
-    .burger__btn span,
-    .burger__btn::before,
-    .burger__btn::after {
+    .content-hed__burger span,
+    .content-hed__burger::before,
+    .content-hed__burger::after {
         content: "";
         height: 2px;
         width: 30px;
@@ -221,25 +221,25 @@ p {
         transition: all 0.3s;
         background-color: #2f302c;
     }
-    .burger__btn::before {
+    .content-hed__burger::before {
         top: 0;
     }
-    .burger__btn::after {
+    .content-hed__burger::after {
         bottom: 0;
     }
-    .burger__btn span {
+    .content-hed__burger span {
         top: 50%;
         transform: translateY(-50%);
     }
-    [data-menu-open] .burger__btn span {
+    [data-menu-open] .content-hed__burger span {
         width: 0;
     }
-    [data-menu-open] .burger__btn::before {
+    [data-menu-open] .content-hed__burger::before {
         rotate: -45deg;
         translate: 0 -50%;
         top: 50%;
     }
-    [data-menu-open] .burger__btn::after {
+    [data-menu-open] .content-hed__burger::after {
         rotate: 45deg;
         translate: 0 50%;
         bottom: 50%;
