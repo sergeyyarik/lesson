@@ -19,7 +19,7 @@ body {
 .header {
     width: 100%;
     padding: 72px 0;
-    z-index: 10 ;
+    z-index: 10;
 }
 .header__content {
     width: 100%;
@@ -49,8 +49,6 @@ body {
     width: 15px;
     flex-shrink: 1;
     background: url("../img/serch.svg") left no-repeat;
-
-   
 }
 .search__input {
     width: 100%;
@@ -118,21 +116,21 @@ body {
 
 .main {
     position: relative;
-       max-width: 1920px;
+    max-width: 1920px;
     z-index: 0;
-        transition: all .6s;
+    transition: all 0.6s;
 }
-.main__color{
+.main__color {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height:100%;
+    height: 100%;
     z-index: 3;
 
-background-color:  rgba(255, 255, 245, 0.4);
+    background-color: rgba(255, 255, 245, 0.4);
 }
-.main__img{
+.main__img {
     position: absolute;
     top: 0;
     left: 0;
@@ -150,9 +148,9 @@ background-color:  rgba(255, 255, 245, 0.4);
 }
 /* .content-hero {
     } */
-    .content-hero__items {
-        max-width: 520px;
-        z-index: 3;
+.content-hero__items {
+    max-width: 520px;
+    z-index: 3;
 }
 .content-hero__item {
     font-size: 20px;
@@ -202,7 +200,6 @@ p {
     .nav__ul {
         gap: 20px;
     }
-
 }
 @media (width <= 1050px) {
     .content-hed__logo {
@@ -212,17 +209,16 @@ p {
     }
     .header__content {
         gap: 29px;
-        
     }
     .content-hed__search {
         flex-basis: 164px;
     }
 }
 @media (width < 778px) {
-       .header {
-      padding-bottom: 80px;
-      position: fixed;
-      background-color: #ffffff;
+    .header {
+        padding-bottom: 80px;
+        position: fixed;
+        background-color: #ffffff;
     }
     .search__input {
         background-color: inherit;
@@ -241,7 +237,7 @@ p {
         position: fixed;
         padding-right: 30px;
     }
-    .content-hed__burger{
+    .content-hed__burger {
         visibility: visible;
         position: relative;
         display: block;
@@ -288,7 +284,7 @@ p {
     [data-menu-open] .content-hed__nav::before {
         left: 0;
     }
-  
+
     .content-hed__nav {
         position: fixed;
         width: 100%;
@@ -312,7 +308,7 @@ p {
         background-color: #a7b0b7;
         z-index: 2;
     }
-    .shop-nav{
+    .shop-nav {
         gap: 10px;
     }
     .nav__ul {
@@ -335,14 +331,14 @@ p {
         line-height: 1;
         background-size: contain;
     }
-    .main{
+    .main {
         padding-top: 50px;
     }
     .main__content {
-       flex-direction: column;
+        flex-direction: column;
         align-items: center;
     }
-    .main__img{
+    .main__img {
         object-fit: fill;
     }
     .content-hero__title {
