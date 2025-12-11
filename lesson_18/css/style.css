@@ -5,8 +5,7 @@
 /* Основні стилі */
 body {
     font-family: "Montserrat", sans-serif;
-    /* background-color: aqua; */
-}
+
 [class*="__container"] {
     max-width: 1430px;
     padding: 0 15px;
@@ -499,4 +498,5 @@ body {
     font-size: 15px;
     color: #343434;
 }
+
 
