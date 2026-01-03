@@ -61,25 +61,33 @@ body {
     gap: 0.3125rem 2.75rem;
     padding: 0.75rem 0;
 }
-.ul-nav__li:hover {
-    color: #c8d1da;
-    border-bottom: 0.0625rem solid #c8d1da; /* Додаємо підкреслення при наведенні */
+.ul-nav__li a:hover{
+    color: #5a6571;
+    /* border-bottom: 0.0625rem solid #5a6571; Додаємо підкреслення при наведенні */
+}
+.ul-nav__li:hover{
+    color: #5a6571;
+    border-bottom: 0.0625rem solid #5a6571;
+     /* Додаємо підкреслення при наведенні */
 }
 .shop-nav__link--love:hover {
-    color: #c8d1da;
-    border-bottom: 0.0625rem solid #c8d1da; /* Додаємо підкреслення при наведенні */
+    color: #5a6571;
+    border-bottom: 0.0625rem solid #5a6571; /* Додаємо підкреслення при наведенні */
 }
 .shop-nav__link--cart:hover {
-    color: #c8d1da;
-    border-bottom: 0.0625rem solid #c8d1da; /* Додаємо підкреслення при наведенні */
+    color: #5a6571;
+    border-bottom: 0.0625rem solid #5a6571; /* Додаємо підкреслення при наведенні */
 }
 .shop-nav__link {
     font-size: 1rem;
     font-weight: 600;
+    text-transform: uppercase;
     color: #2f302c;
     line-height: 1.25;
     padding-left: 1.375rem;
     transition: all 0.6s;
+      border-bottom: 0.0625rem solid transparent;
+      cursor: pointer;
 }
 .shop-nav__link--cart {
     background: url("../img/shop.svg") left no-repeat;
@@ -90,9 +98,11 @@ body {
 .ul-nav__li {
     font-size: 1rem;
     font-weight: 600;
+    text-transform: uppercase;
     color: #2f302c;
     line-height: 1.25;
     transition: all 0.6s;
+      border-bottom: 0.0625rem solid transparent; /
 }
 .content-hed__shop {
     display: flex;
@@ -322,10 +332,12 @@ display: none;
         padding-top: 3.125rem;
     }
     .main__content {
+
         flex-direction: column;
         align-items: center;
     }
     .main__img {
+        width: 100%;
         object-fit: fill;
     }
     .content-hero__title {
@@ -363,16 +375,18 @@ display: none;
     max-width: 42.5rem;
 }
 .item-gallery {
+    position: relative;
     padding: 3rem 2.25rem;
+    height: 584px;
 }
-.item-img1 {
+.item-gallery img {
     width: 100%;
-    height: 36.25rem;
-    background-image: url("../img/item-gallery1.jpg");
-    /* background-position: center; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: bottom;
+    height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+    z-index: -1;
+         object-fit: fill;
 }
 .item-gallery__inner {
     width: 100%;
@@ -381,24 +395,7 @@ display: none;
     justify-content: end;
     height: 100%;
 }
-.item-img2 {
-    width: 100%;
-    height: 36.25rem;
-    background-image: url("../img/item-gallery2.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 3rem 6.25rem;
-    text-align: center;
-}
-.item-img3 {
-    width: 100%;
-    height: 36.25rem;
-    background-image: url("../img/item-gallery3.jpg");
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 .item-gallery__title {
     font-size: 1.25rem;
     font-weight: 700;
@@ -435,13 +432,13 @@ display: none;
     top: 0.1875rem;
     right: -1.125rem;
 }
-@media (width <= 72.5em) {
+@media (width <= 1160px) {
     .main__furniture {
         flex-wrap: wrap;
         justify-content: center;
     }
     .furniture-gallery__item {
-        max-width: 31.25rem;
+        /* max-width: 500px; */
     }
 }
 
@@ -459,10 +456,12 @@ display: none;
     margin-bottom: 1.5625rem;
 }
 .logo-gallery__items {
+    margin: 0 auto;
+    max-width: 1100px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10.625rem, 1fr));
     flex-wrap: wrap;
-    margin-bottom: 5.125rem;
+    
 }
 
 /* main product */
@@ -497,6 +496,7 @@ display: none;
     grid-template-columns: repeat(auto-fill, minmax(27.5rem, 1fr));
     justify-content: center;
     gap: 2.5rem 2rem;
+    margin-bottom: 5.125rem;
 }
 .product-gallery__item {
     grid-row: auto;
@@ -534,7 +534,7 @@ display: none;
     color: #2f302c;
     line-height: 1.75rem;
 }
-@media (width <= 30em) {
+@media (width <= 30rem) {
     .menu-gallery__ul {
         font-size: 0.875rem;
         text-transform: lowercase;
@@ -544,7 +544,7 @@ display: none;
         gap: 0.625rem;
     }
 }
-@media (width <= 41.3125em) {
+@media (width <= 661px) {
     .product-gallery__items {
         display: flex;
         flex-wrap: wrap;
