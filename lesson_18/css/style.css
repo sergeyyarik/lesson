@@ -497,7 +497,6 @@ body {
     }
    .items-join__table{
     width:100%;
-    overflow-x: auto;
 }
    .content-join__items {
         flex-direction: column;
@@ -527,6 +526,7 @@ body {
     font-size: 15px;
     color: #343434;
 }
+
 
 
 
