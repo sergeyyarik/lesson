@@ -149,7 +149,7 @@ body {
         bottom: 0;
     }
     .header-yoga__burger span {
-        margin-top: 45%;
+        margin-top: 10%;
     }
     [data-menu-open] .header-yoga__burger span {
         width: 0;
@@ -526,6 +526,7 @@ body {
     font-size: 15px;
     color: #343434;
 }
+
 
 
 
