@@ -446,7 +446,7 @@ body {
     margin-bottom: 20px;
 }
    .items-join__table{
-    width: 100%;
+   max-width:665px;
     overflow-x: auto;
 }
  
@@ -524,4 +524,5 @@ body {
     font-size: 15px;
     color: #343434;
 }
+
 
