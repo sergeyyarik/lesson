@@ -495,7 +495,10 @@ body {
     .content-join__text{
         margin-bottom: 0;
     }
-
+   .items-join__table{
+    width:100%;
+    overflow-x: auto;
+}
    .content-join__items {
         flex-direction: column;
         justify-content: center;
@@ -524,5 +527,6 @@ body {
     font-size: 15px;
     color: #343434;
 }
+
 
 
