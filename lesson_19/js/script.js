@@ -9,6 +9,29 @@ function documentActions(e) {
     }
 }
 
+
+// scroll headera
+const animItems = document.querySelector('.header');
+if(animItems){
+    window.addEventListener('scroll', elementScrollHeder);
+    function elementScrollHeder(){
+        const res = document.documentElement;
+        const headerScrol = window.pageXOffset;
+        const headerScrolTop = res.scrollTop;
+            const animItem = animItems;
+        if (headerScrolTop !== headerScrol){
+                animItem.classList.add("active");
+        } else if (headerScrolTop == headerScrol){
+                animItem.classList.remove("active");
+
+            }
+    }
+}
+// -------------------------------------------------
+
+
+
+
 // let someVar = 0;
 // ++someVar;
 
@@ -52,14 +75,14 @@ function documentActions(e) {
                 //     }
                 // }
 
-let masNumb = [3, 4, 7, "fg4y5",  9, 10, "ty", 5 ];
-for(let i = 0 ; i < masNumb.length; i++){
-    console.log(masNumb[i]);
-    let masRez = masNumb[i];
-    if(masRez === 10){
-        console.log(masRez);
-    }
-}
+// let masNumb = [3, 4, 7, "fg4y5",  9, 10, "ty", 5 ];
+// for(let i = 0 ; i < masNumb.length; i++){
+//     console.log(masNumb[i]);
+//     let masRez = masNumb[i];
+//     if(masRez === 10){
+//         console.log(masRez);
+//     }
+// }
 
 
 //let res;
